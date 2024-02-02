@@ -1,7 +1,9 @@
 const Flutterwave = require('flutterwave-node-v3');
-const open = require('open');
+const open = import('open');
+require('dotenv').config()
 
 const flw = new Flutterwave(process.env.FLW_PUBLIC_KEY, process.env.FLW_SECRET_KEY);
+console.log(process.env.FLW_PUBLIC_KEY);
 
 // Initiating the transaction
 const payload = {
@@ -13,7 +15,7 @@ const payload = {
     "amount": "100",
     "redirect_url": "https://www.google.com",
     "fullname": "Flutterwave Developers",
-    "email": "ojiehdavid%@gmail.com ",
+    "email": "ojiehdavid5@gmail.com",
     "phone_number": "09000000000",
     "enckey": process.env.FLW_ENCRYPTION_KEY,
     "tx_ref": "example01",
