@@ -37,7 +37,7 @@ const chargeCard = async () => {
                 "fields": [
                     "pin"
                 ],
-                "pin": 8968
+                "pin": ""
             }
             const reCallCharge = await flw.Charge.card(payload2)
 
