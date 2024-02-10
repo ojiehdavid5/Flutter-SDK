@@ -27,6 +27,9 @@ const chargeCard = async () => {
         const response = await flw.Charge.card(payload)
         console.log(response)
 
+
+        
+
         // Authorizing transactions
 
         // For PIN transactions
