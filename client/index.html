@@ -174,5 +174,33 @@
 <script src='https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js'></script><script  src="./script.js"></script>
 <script src="https://unpkg.com/vue@next"></script>
 
+<script>
+  
+  function makePayment() {
+    FlutterwaveCheckout({
+      public_key: "FLWPUBK_TEST-337d4e3e6c0c10c22b28cac389a35d46-X",
+      tx_ref: "txref-DI0NzMx12",
+      amount: 2500,
+      currency: "NGN",
+      payment_options: "card, banktransfer, ussd",
+      meta: {
+        source: "docs-inline-test",
+        consumer_mac: "92a3-912ba-1192a",
+      },
+      customer: {
+        email: "test@mailinator.com",
+        phone_number: "08100000000",
+        name: "Ayomide Jimi-Oni",
+      },
+      customizations: {
+        title: "Flutterwave Developers",
+        description: "Test Payment",
+        logo: "https://checkout.flutterwave.com/assets/img/rave-logo.png",
+      },
+    })
+  }
+</script>
+</script>
+
 </body>
 </html>
