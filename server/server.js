@@ -7,10 +7,10 @@ const flw = new Flutterwave(process.env.FLW_PUBLIC_KEY, process.env.FLW_SECRET_K
 
 // Initiating the transaction
 const payload = {
-    "card_number": "4187451533336121",
-    "cvv": "968",
-    "expiry_month": "08",
-    "expiry_year": "26",
+    "card_number": "",
+    "cvv": "",
+    "expiry_month": "",
+    "expiry_year": "",
     "currency": "NGN",
     "amount": "100",
     "redirect_url": "https://www.google.com",
